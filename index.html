@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      /> -->
+    <base href="localhost" />
+    <link rel="stylesheet" href="./CSS/site.css" />
+    <title>El señor de las notas</title>
+  </head>
+  <body>
+    <nav class="areaNav">
+      <h1 class="title">El señor de las notas</h1>
+      <ul class="nav-buttons">
+        <li class="button-span">
+          <span><h5>Categorias</h5></span>
+        </li>
+        <li class="button-span">
+          <span><h5>Frase</h5></span>
+        </li>
+        <li class="button-span">
+          <span><h5>Registro</h5></span>
+        </li>
+        <li class="button-span">
+          <span><h5>Pie de pagina</h5></span>
+        </li>
+      </ul>
+      <hr />
+    </nav>
+    <section class="categories">
+      <h2 class="category-tittle">Categorias</h2>
+      <main class="category-cards">
+        <figure class="card">
+          <h3>Aerofonos</h3>
+          <a title="Aerofonos" href="./Views/aerofonos.html">
+            <img
+            src="./SRC/img/2d3978a17095dae918f93e4362627c5e.jpg"
+            alt=""
+            />
+            <!-- usemap="#workmap1" -->
+          </a>
+        </figure>
+        <figure class="card">
+          <h3>Cordofonos</h3>
+          <a title="Cordofonos" href="./Views/cordofonos.html"> 
+            <img
+            src="./SRC/img/039a1cb4305e559e6decb28b183b0f01.jpg"
+            alt=""
+            />
+            <!-- usemap="#workmap2" -->
+          </a>
+        </figure>
+        <figure class="card">
+          <h3>Idiofonos</h3>
+          <a title="Idiofonos" href="./Views/idiofonos.html">
+            <img
+            src="./SRC/img/500c93dd63f49018556637ea09a55437.jpg"
+            alt=""
+            />
+            <!-- usemap="#workmap3" -->
+          </a>
+          <!-- <map name="workmap3">
+            <area
+              shape="rect"
+              coords="11,740,492,264"
+              href="/idiofonos.html"
+              alt="Idiofonos"
+            />
+          </map> -->
+        </figure>
+        <figure class="card">
+          <h3>Membranofonos</h3>
+          <a title="Membranofono" href="./Views/membranofono.html">
+            <img
+            src="./SRC/img/8bba5158a828d73c36c8b2e7439579d4.jpg"
+            alt=""
+            />
+            <!-- usemap="#workmap4" -->
+          </a>
+          <!-- <map name="workmap4">
+            <area
+              shape="circle"
+              coords="136,161,76.2"
+              href="/membranofono.html"
+              alt="Membranofonos"
+            /> -->
+          </map>
+        </figure>
+        <figure class="card">
+          <h3>Electrofonos</h3>
+          <a title="Electrofonos" href="./Views/electrofonos.html">
+            <img
+            src="./SRC/img/59c416bed42b0d2f76b9d1822fd07f79.jpg"
+            alt=""
+            />
+            <!-- usemap="#workmap5" -->
+          </a>
+          <!-- <map name="workmap5">
+            <area
+              shape="rect"
+              coords="256,331,3,6"
+              href="/electrofonos.html"
+              alt="Electrofonos"
+            />
+          </map> -->
+        </figure>
+      </main>
+    </section>
+    <article class="frase">
+      <blockquote class="bloque-citas">
+        <p>"No sere una estrella de rock. Sere una leyenda"</p>
+        <p>-Freddy Mercury</p>
+      </blockquote>
+    </article>
+    <div class="titulo">
+      <h4>Registrate</h4>
+    </div>
+    <form class="for-registrar" action="">
+      <div class="name-user">
+        <label>Nombre</label>
+        <input placeholder="Nombre" class="text-box" type="text" />
+      </div>
+      <div class="pasword-user">
+        <label>Contraseña</label>
+        <input placeholder="Contraseña " class="text-box" type="pasword" />
+      </div>
+      <div class="gender">
+        <section class="sec-1">
+          <input type="radio" id="male" name="gender" />
+          <label for="male">Hombre</label>
+        </section>
+        <section class="sec-2">
+          <input type="radio" id="fem" name="gender" />
+          <label for="fem">Mujer</label>
+        </section>
+      </div>
+      <div class="email">
+        <label for="">Email</label>
+        <input
+          required
+          class="text-box"
+          type="email"
+          pattern="(A-z)+(0-9)?+@gmail.com"
+          title="Esto no es una direccion de correo electronico Gmail"
+        />
+      </div>
+      <div class="area">
+        <label for="">Hablanos de ti</label>
+        <textarea placeholder="Hablanos de ti" rows="10"></textarea>
+      </div>
+      <input type="submit" value="Subir Datos" />
+    </form>
+    <footer class="pie">
+      <address>
+        Hecho por Daniel Gonzalez Martinez
+        <br />
+        <a title="codigo fuente" rel="noopener" href="https://github.com/DanielW705/proyecto_web" target="_blank">
+        </a>
+      </address>
+    </footer>
+  </body>
+</html>

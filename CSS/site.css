@@ -1,0 +1,260 @@
+@font-face {
+  font-family: "Old London";
+  src: url("../SRC/fonts/OldLondon.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Cloister Black";
+  src: url("../SRC/fonts/CloisterBlack.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+* {
+  font-family: "Old London", "Cloister Black", Arial;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1.4em;
+}
+.areaNav {
+  width: 100%;
+  height: 100%;
+  min-height: 150px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  /*background-image: url("../SRC/c485471a727d9f94e9a2d218cde9168e.jpg");
+  background-repeat: repeat;
+  background-size: 90px 90px;*/
+  padding: 0 2%;
+  background: #0a0a0a;
+  flex-wrap: wrap;
+  font-size: 0.6em;
+}
+.areaNav .title {
+  font-family: "Cloister Black";
+  width: 25%;
+  text-align: center;
+  color: #ffd700;
+  font-size: 50px;
+}
+.areaNav .nav-buttons {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.areaNav hr {
+  width: 100%;
+  background-color: white;
+  height: 5px;
+}
+.areaNav .nav-buttons .button-span {
+  width: 20%;
+  height: 100%;
+  color: white;
+  list-style: none;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.areaNav .nav-buttons .button-span span {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 244, 211, 0.25);
+  cursor: pointer;
+  border-radius: 20px;
+}
+.areaNav .nav-buttons .button-span span :hover {
+}
+.areaNav .nav-buttons .button-span span h5 {
+  font-size: 60%;
+  text-align: center;
+}
+.categories {
+  background: #0a0a0a;
+  color: #fefefe;
+}
+.categories .category-tittle {
+  margin-left: 5%;
+}
+.categories .category-cards {
+  /*display: flex;
+  justify-content: space-around;
+  /*align-items: center;*/
+  /*flex-direction: row;*/
+  margin: 2% 0 0 0;
+  height: 530px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+.categories .category-cards .card {
+  height: 75%;
+  width: 75%;
+  position: relative;
+  box-shadow: 10px 0px 20px rgba(220, 220, 220, 0.45),
+    0px 10px 10px rgba(220, 220, 220, 0.45);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.categories .category-cards .card:hover {
+  transform: translateY(-20px);
+}
+.categories .category-cards .card h3 {
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  font-size: 30px;
+}
+.categories .category-cards .card a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.frase {
+  width: 100%;
+  height: 300px;
+  background: url("../SRC/img/201221d74161a1bc1b82a20b12f0eb78_adobe_express.svg")
+    no-repeat center 28%;
+  /* background-image: url("../SRC/201221d74161a1bc1b82a20b12f0eb78_adobe_express.svg");
+  background-repeat: no-repeat;
+  background-position: center 28%;*/
+  background-size: cover;
+  background-color: #0a0a0a;
+  /*position: relative;
+  bottom: 45px;*/
+}
+.frase .bloque-citas {
+  padding: 9.69px 15px;
+  color: white;
+  font-size: 50px;
+}
+.frase .bloque-citas p {
+  margin-bottom: 20px;
+}
+.titulo {
+  color: #eeee;
+  background: #0a0a0a;
+  padding: 25px;
+}
+.titulo h4 {
+  font-size: 80px;
+}
+.for-registrar {
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #c7cad0;
+  font-size: 30px;
+}
+.for-registrar div:nth-last-child(n + 3) {
+  width: 45%;
+  margin: 30px 20px;
+  display: flex;
+}
+.for-registrar .pasword-user label {
+  width: 250px !important;
+}
+
+.for-registrar div:nth-last-child(n + 3) label {
+  width: 150px;
+  height: 50px;
+  font-size: 35px;
+  background-image: url("../SRC/img/Tablero-Contrachapado-color-Roble-Rustico-GARFER-1-1.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+  border: 5px solid #c7cad0;
+}
+.for-registrar div:nth-last-child(n + 3) .text-box {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  font-size: 30px;
+  padding: 10px;
+}
+.for-registrar .gender {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.for-registrar .gender section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.for-registrar .gender section label {
+  border-radius: 10px !important;
+  margin-top: 10px;
+}
+.for-registrar .gender section input[type="radio"] {
+  width: 25px;
+  height: 25px;
+}
+.for-registrar .area {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.for-registrar .area label {
+  width: 20%;
+  height: 15%;
+  font-size: 55px;
+  border-radius: 10px;
+  border: 5px solid #c7cad0;
+  background-image: url("../SRC/img/Tablero-Contrachapado-color-Roble-Rustico-GARFER-1-1.jpg");
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.for-registrar .area textarea {
+  width: 50%;
+  height: 60%;
+  border-radius: 10px;
+}
+.for-registrar input[type="submit"] {
+  margin: 0 0 20px 0;
+  font-size: 70px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 5px solid #c7cad0;
+  background-image: url("../SRC/img/Tablero-Contrachapado-color-Roble-Rustico-GARFER-1-1.jpg");
+  background-size: cover;
+  color: #c7cad0;
+}
+.pie {
+  background-color: #0a0a0a;
+  color: #efb810;
+  font-size: 15px;
+}
+.pie address {
+  padding: 10px;
+  line-height: 40px;
+}
+.pie address a {
+  width: 40px;
+  height: 40px;
+  content: url("../SRC/img/github-alt.svg");
+}
+.pie address a:hover {
+  filter: brightness(0) saturate(100%) invert(72%) sepia(99%) saturate(813%)
+    hue-rotate(352deg) brightness(96%) contrast(95%);
+}
