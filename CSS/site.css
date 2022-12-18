@@ -364,7 +364,7 @@
     grid-area: tarjeta_5;
   }
 }
-@media only screen and (min-width: 1440px) and (max-width: 1800px) {
+@media only screen and (min-width: 1440px) and (max-width: 2000px) {
   * {
     font-size: 1.4em;
   }
@@ -389,29 +389,30 @@
     font-size: 40px;
   }
 }
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 2000px) {
   * {
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   .areaNav {
-    min-height: 300px;
+    min-height: 250px;
   }
   .areaNav .title {
     font-size: 100px;
   }
   .areaNav .nav-buttons .button-span {
     width: 100%;
-    font-size: 70px;
+    font-size: 60px;
   }
   .areaNav .nav-buttons .button-span span {
-    width: 75%;
-    height: 70%;
+    width: 65%;
+    height: 60%;
   }
   .categories .category-cards {
     grid-template-columns: repeat(5, minmax(350px, 750px));
     grid-template-rows: minmax(350px, auto);
   }
   .categories .category-cards .card h3 {
-    font-size: 100px;
+    font-size: 70px;
+    top: 90%;
   }
 }
