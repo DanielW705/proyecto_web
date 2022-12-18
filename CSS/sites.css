@@ -1,18 +1,18 @@
 @font-face {
   font-family: "Old London";
-  src: url("../SRC/OldLondon.ttf");
+  src: url("../SRC/fonts/OldLondon.ttf");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "Cloister Black";
-  src: url("../SRC/CloisterBlack.ttf");
+  src: url("../SRC/fonts/CloisterBlack.ttf");
   font-style: normal;
   font-weight: normal;
 }
 @font-face {
   font-family: "The Centurion";
-  src: url("../SRC/The\ Centurion\ .ttf");
+  src: url("../SRC/fonts/The\ Centurion\ .ttf");
   font-style: normal;
   font-weight: normal;
 }
@@ -21,7 +21,7 @@
   margin: 0;
   padding: 0;
   color: #0a0a0a;
-  font-family: "The Centurion", "Old London", "Cloister Black";
+  font-family: "The Centurion", "Old London", "Cloister Black", Arial;
 }
 .left-menu {
   background-color: #c7bd9b;
@@ -74,16 +74,16 @@
   margin: 20px;
 }
 .left-menu .icons .interior .Home {
-  content: url("../SRC/cabana-de-madera.svg");
+  content: url("../SRC/img/cabana-de-madera.svg");
 }
 .left-menu .icons .interior .nofitication {
-  content: url("../SRC/bell-solid.svg");
+  content: url("../SRC/img/bell-solid.svg");
 }
 .left-menu .icons .interior .inbox {
-  content: url("../SRC/inbox-solid.svg");
+  content: url("../SRC/img/inbox-solid.svg");
 }
 .left-menu .icons .interior .shopping-car {
-  content: url("../SRC/cart-shopping-solid.svg");
+  content: url("../SRC/img/cart-shopping-solid.svg");
 }
 .main-section {
   float: right;
