@@ -320,9 +320,23 @@
   }
 }
 /* Para computadoras de minimo 1200px para arriba */
-@media only screen and (min-width: 1200px) and (max-width: 1900px) {
+@media only screen and (min-width: 1200px) and (max-width: 1440px) {
   * {
-    font-size: 1.4em;
+    font-size: 1.5em;
+  }
+  .areaNav {
+    min-height: 150px;
+  }
+  .areaNav .title {
+    font-size: 35px;
+  }
+  .areaNav .nav-buttons .button-span {
+    width: 100%;
+    font-size: 35px;
+  }
+  .areaNav .nav-buttons .button-span span {
+    width: 90%;
+    height: 60%;
   }
   .categories .category-tittle {
     position: static;
@@ -330,8 +344,8 @@
   .categories .category-cards {
     grid-template-columns: repeat(3, minmax(150px, 300px));
     grid-template-areas:
-      "tarjeta_1     vacio       tarjeta_2"
-      "tarjeta_3     tarjeta_4   tarjeta_5";
+      "tarjeta_1     tarjeta_3       tarjeta_2"
+      "tarjeta_4     vacio           tarjeta_5";
     justify-content: space-evenly;
   }
   .categories .category-cards .card:nth-child(1) {
@@ -350,7 +364,32 @@
     grid-area: tarjeta_5;
   }
 }
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1440px) and (max-width: 1800px) {
+  * {
+    font-size: 1.4em;
+  }
+  .areaNav {
+    min-height: 125px;
+  }
+  .areaNav .title {
+    font-size: 36px;
+  }
+  .areaNav .nav-buttons .button-span {
+    width: 100%;
+    font-size: 40px;
+  }
+  .areaNav .nav-buttons .button-span span {
+    width: 70%;
+    height: 70%;
+  }
+  .categories .category-cards {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+  .categories .category-cards .card h3 {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-width: 1800px) {
   * {
     font-size: 1.8em;
   }
@@ -362,14 +401,17 @@
   }
   .areaNav .nav-buttons .button-span {
     width: 100%;
-    font-size: 50px;
+    font-size: 70px;
   }
   .areaNav .nav-buttons .button-span span {
-    width: 65%;
+    width: 75%;
     height: 70%;
   }
   .categories .category-cards {
     grid-template-columns: repeat(5, minmax(350px, 750px));
     grid-template-rows: minmax(350px, auto);
+  }
+  .categories .category-cards .card h3 {
+    font-size: 100px;
   }
 }
