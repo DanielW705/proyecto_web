@@ -39,11 +39,8 @@
 .open-menu + .main-section {
   width: 85%;
 }
-.open-menu .burger-box {
-  visibility: collapse;
-}
 .open-menu .icon-menu {
-  visibility: collapse;
+  display: none;
 }
 .close-menu {
   width: 5%;
@@ -53,7 +50,7 @@
   width: 95%;
 }
 .close-menu .text-menu {
-  visibility: collapse;
+  display: none;
 }
 .close-menu .icons {
   height: 50% !important;
@@ -70,6 +67,9 @@
   justify-content: center;
   align-items: center;
   margin: 5px 0;
+}
+.open-menu .burger-box {
+  display: none;
 }
 .left-menu .text-menu {
   height: 80%;
