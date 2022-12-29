@@ -3,7 +3,7 @@
 
   let close_menu = document.querySelector(".left-menu .btn-close-menu");
 
-  let menu = document.querySelector(".left-menu");
+  let menu = document.querySelector(".body");
 
   burge_box.addEventListener("click", () => {
     // menu.classList.contains("close-menu")
