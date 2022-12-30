@@ -6,45 +6,111 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <base href="localhost">
   <link rel="stylesheet" href="../CSS/sites.css">
+  <script src="../Js/site.js" defer></script>
   <title>EL señor de las notas</title>
 </head>
 
 <body>
-  <aside class="left-menu">
-    <menu class="text-menu">
-      <img class="btn-close-menu"
-        src="../SRC/img/kisspng-arrow-computer-icons-clip-art-5af96bd2692b19.3627848315262955064308.svg" alt="cerrar" />
-      <ul class="options-menu">
-        <!-- <figure class="selector"></figure> -->
-        <li class="option-menu">Video</li>
-        <li class="option-menu">Productos</li>
-        <li class="option-menu">Comprar</li>
-      </ul>
-    </menu>
-    <footer class="icons">
-      <div class="interior">
-        <a title="Regresar al inicio" class="Home" href="../index.html"></a>
-        <a title="Ver notificaciones" class="nofitication" href=""></a>
-        <a title="Ver mensajes" class="inbox" href=""></a>
-        <a title="Ver carrito de compra" class="shopping-car" href=""></a>
-      </div>
-    </footer>
-  </aside>
-  <main class="main-section">
-    <article class="section-presentation">
-      <video autoplay loop class="video-presentation">
-        <source src="../SRC/video/Launchpad VS Launchkey -- Für Elise [Dubstep Remix].mp4" type="video/mp4">
-        </source>
-      </video>
-    </article>
-    <article class="section-compras">
-      <table class="show-productos">
-        <thead class="cabezera">
-          <tr class="cuerpo">
-            <th><img src="../SRC/img/inglesa.png" alt="Escudo de armas inglesa"></th>
-            <th class="serch-bar">
-              <div class="complete-serch-bar">
-                <select title="Categorias" class="combo-text">
+  <main class="cuerpo-completo close-menu">
+    <aside class="left-menu">
+      <img class="burger-box" src="../SRC/img/burger-box.svg" alt="">
+      <menu class="text-menu">
+        <img class="btn-close-menu"
+          src="../SRC/img/kisspng-arrow-computer-icons-clip-art-5af96bd2692b19.3627848315262955064308.svg"
+          alt="cerrar" />
+        <ul class="options-menu">
+          <!-- <figure class="selector"></figure> -->
+          <li class="option-menu">Video</li>
+          <li class="option-menu">Productos</li>
+          <li class="option-menu">Comprar</li>
+        </ul>
+      </menu>
+      <menu class="icon-menu">
+        <ul class="icons-menu">
+          <li class="icon-option">
+            <img src="../SRC/img/video.svg" alt="">
+          </li>
+          <li class="icon-option">
+            <img src="../SRC/img/search.svg" alt="">
+          </li>
+          <li class="icon-option">
+            <img src="../SRC/img/guitar.svg" alt="">
+          </li>
+        </ul>
+      </menu>
+      <footer class="icons">
+        <div class="interior">
+          <a title="Regresar al inicio" class="Home" href="../index.html"></a>
+          <a title="Ver notificaciones" class="nofitication" href=""></a>
+          <a title="Ver mensajes" class="inbox" href=""></a>
+          <a title="Ver carrito de compra" class="shopping-car" href=""></a>
+        </div>
+      </footer>
+    </aside>
+    <main class="main-section">
+      <article class="section-presentation">
+        <video autoplay loop class="video-presentation">
+          <source src="../SRC/video/Launchpad VS Launchkey -- Für Elise [Dubstep Remix].mp4" type="video/mp4">
+          </source>
+        </video>
+      </article>
+      <article class="section-compras">
+        <!-- <table class="show-productos">
+          <thead class="cabezera">
+            <tr class="cuerpo">
+              <th><img src="../SRC/img/inglesa.png" alt="Escudo de armas inglesa"></th>
+              <th class="serch-bar">
+                <div class="complete-serch-bar">
+                  <select title="Categorias" class="combo-text">
+                    <option selected>Categorias</option>
+                    <option>Generacion electrica completa</option>
+                    <option>Electricamente aplificado</option>
+                  </select>
+                  <input class="text-datalist" type="text" placeholder="Buscar" list="name-instruments">
+                  <datalist id="name-instruments">
+                    <option value="Mooogo">
+                    <option value="Jackson">
+                    <option value="inMusic">
+                  </datalist>
+                </div>
+              <th><img src="../SRC/img/romana.png" alt="Escudo de armas Romana"></th>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="cuerpo">
+            <tr class="body">
+              <td class="ilustration"><img src="../SRC/img/termin-removebg-preview.png" alt=""></td>
+              <td><input type="hidden" value="No sea metiche"></td>
+              <td class="description">Moogo thermini, multicolor, medium</td>
+              <td class="money-value">$9,468</td>
+              <td class="se_comprara"><input title="Comprar" type="checkbox"></td>
+            </tr>
+            <tr class="body">
+              <td class="ilustration"><img src="../SRC/img/guitarra-detres-removebg-preview.png" alt=""></td>
+              <td><input type="hidden" value="No sea metiche"></td>
+              <td class="description">Jackson Js Series Rhoad Negro Satinado</td>
+              <td class="money-value">$7,640</td>
+              <td class="se_comprara"><input title="Comprar" type="checkbox"></td>
+            </tr>
+            <tr class="body">
+              <td class="ilustration"><img src="../SRC/img/teclado-removebg-preview.png" alt=""></td>
+              <td><input type="hidden" value="No sea metiche"></td>
+              <td class="description">Alesis Melody Piano electrico con altavoces</td>
+              <td class="money-value">$2,685</td>
+              <td class="se_comprara"><input title="Comprar" type="checkbox"></td>
+            </tr>
+          </tbody>
+          <!--   <tfoot>
+          <p>Total: </p>
+          <p>$X</p>
+        </tfoot>
+        </table> -->
+        <main class="show-productos">
+          <section class="cabezera">
+            <img src="../SRC/img/inglesa.png" alt="Escudo de armas inglesa">
+            <div class="serch-bar">
+              <menu class="complete-serch-bar">
+                <select title="Categorias" placeholder="Categorias" class="combo-text">
                   <option selected>Categorias</option>
                   <option>Generacion electrica completa</option>
                   <option>Electricamente aplificado</option>
@@ -55,40 +121,54 @@
                   <option value="Jackson">
                   <option value="inMusic">
                 </datalist>
+              </menu>
+            </div>
+            <img src="../SRC/img/romana.png" alt="Escudo de armas Romana">
+          </section>
+          <section class="cuerpo">
+            <div class="body">
+              <input type="hidden" value="NaN">
+              <img class="ilustration" src="../SRC/img/termin-removebg-preview.png" alt="">
+              <p class="description">Moogo thermini, multicolor, medium</p>
+              <p class="money-value"><strong>
+                  $9,468
+                </strong>
+              </p>
+              <div class="se_comprara">
+                <label for="chkBox1">Agregar al carrito</label>
+                <input id="chkBox1" title="Comprar" type="checkbox">
               </div>
-            <th><img src="../SRC/img/romana.png" alt="Escudo de armas Romana"></th>
-            </th>
-          </tr>
-        </thead>
-        <tbody class="cuerpo">
-          <tr class="body">
-            <td class="ilustration"><img src="../SRC/img/termin-removebg-preview.png" alt=""></td>
-            <td><input type="hidden" value="No sea metiche"></td>
-            <td class="description">Moogo thermini, multicolor, medium</td>
-            <td class="money-value">$9,468</td>
-            <td class="se_comprara"><input title="Comprar" type="checkbox"></td>
-          </tr>
-          <tr class="body">
-            <td class="ilustration"><img src="../SRC/img/guitarra-detres-removebg-preview.png" alt=""></td>
-            <td><input type="hidden" value="No sea metiche"></td>
-            <td class="description">Jackson Js Series Rhoad Negro Satinado</td>
-            <td class="money-value">$7,640</td>
-            <td class="se_comprara"><input title="Comprar" type="checkbox"></td>
-          </tr>
-          <tr class="body">
-            <td class="ilustration"><img src="../SRC/img/teclado-removebg-preview.png" alt=""></td>
-            <td><input type="hidden" value="No sea metiche"></td>
-            <td class="description">Alesis Melody Piano electrico con altavoces</td>
-            <td class="money-value">$2,685</td>
-            <td class="se_comprara"><input title="Comprar" type="checkbox"></td>
-          </tr>
-        </tbody>
-        <!--   <tfoot>
-            <p>Total: </p>
-            <p>$X</p>
-            </tfoot>-->
-      </table>
-    </article>
+            </div>
+            <div class="body">
+              <input type="hidden" value="NaN">
+              <img class="ilustration" src="../SRC/img/guitarra-detres-removebg-preview.png" alt="">
+              <p class="description">Jackson Js Series Rhoad Negro Satinado</p>
+              <p class="money-value"><strong>
+                  $7,640
+                </strong>
+              </p>
+              <div class="se_comprara">
+                <label for="chkBox2">Agregar al carrito</label>
+                <input id="chkBox2" title="Comprar" type="checkbox">
+              </div>
+            </div>
+            <div class="body">
+              <input type="hidden" value="NaN">
+              <img class="ilustration" src="../SRC/img/teclado-removebg-preview.png" alt="">
+              <p class="description">Alesis Melody Piano electrico con altavoces</p>
+              <p class="money-value"><strong>
+                  $2,685
+                </strong>
+              </p>
+              <div class="se_comprara">
+                <label for="chkBox3">Agregar al carrito</label>
+                <input id="chkBox3" title="Comprar" type="checkbox">
+              </div>
+            </div>
+          </section>
+        </main>
+      </article>
+    </main>
   </main>
 </body>
 
