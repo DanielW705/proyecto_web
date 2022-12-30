@@ -25,7 +25,7 @@
   font-size: 1em;
   overflow: hidden;
 }
-.body {
+.cuerpo-completo {
   display: grid;
   grid-template-columns: 5% 95%;
 }
@@ -351,7 +351,7 @@ label {
   cursor: pointer;
 }
 @media only screen and (max-width: 1100px) {
-  .body {
+  .cuerpo-completo {
     grid-template-columns: 100%;
     grid-template-rows: 100px 100vh;
   }
@@ -425,6 +425,29 @@ label {
     font-size: 25px;
     padding-left: 10px;
   }
+  .main-section .section-compras .show-productos .cuerpo {
+    height: 100vh;
+  }
+  .main-section .section-compras .show-productos .cuerpo .body {
+    grid-template-columns: 50% 30% 20%;
+  }
+  .main-section .section-compras .show-productos .cuerpo .body .ilustration {
+    grid-column: span 3;
+  }
+  .main-section .section-compras .show-productos .cuerpo .body .se_comprara {
+    justify-content: space-evenly;
+  }
+  .main-section
+    .section-compras
+    .show-productos
+    .cuerpo
+    .body
+    .se_comprara
+    input,
+  label {
+    height: 25%;
+    font-size: 20px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .close-menu .icons .interior a,
@@ -457,5 +480,14 @@ label {
     .complete-serch-bar
     .text-datalist {
     width: 60%;
+  }
+  .main-section .section-compras .show-productos .cuerpo {
+    justify-content: space-between;
+  }
+  .main-section .section-compras .show-productos .cuerpo .body {
+    font-size: 20px;
+  }
+  .main-section .section-compras .show-productos .cuerpo .body .description {
+    font-size: 20px;
   }
 }
