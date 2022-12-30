@@ -38,6 +38,9 @@
   font-size: 40px;
   transition: 0.5s;
 }
+.left-menu .text-menu {
+  transition: 0.5s;
+}
 .left-menu .text-menu .options-menu {
   height: 70%;
   display: flex;
@@ -170,12 +173,13 @@ button {
 }
 .main-section {
   /* width: 70%; */
+  height: 100vh;
   transition: 0.5s;
   overflow: scroll;
 }
 .main-section .section-presentation {
   width: 100%;
-  height: 75%;
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -311,6 +315,7 @@ button {
 .main-section .section-compras .show-productos .cuerpo .body .ilustration {
   padding: 25px;
   width: 90%;
+  max-height: 90%;
 }
 .main-section .section-compras .show-productos .cuerpo .body .description {
   width: 90%;
@@ -393,6 +398,41 @@ label {
   .close-menu .left-menu {
     padding: 0;
   }
+  .open-menu .left-menu {
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    flex-direction: column;
+  }
+  .open-menu .main-section {
+    overflow: hidden;
+  }
+  .open-menu .text-menu {
+    width: 100%;
+    height: 60%;
+    font-size: 70px;
+    display: flex;
+    flex-direction: column;
+  }
+  .left-menu .text-menu .options-menu {
+    width: 100%;
+    height: 75%;
+  }
+  .left-menu .icons .interior {
+    width: 70%;
+    height: 50%;
+  }
+  .open-menu .icons {
+    width: 100%;
+    height: 40%;
+  }
+  .left-menu .text-menu .btn-close-menu {
+    width: 30%;
+    height: 30%;
+    left: 70%;
+    top: 0%;
+  }
+
   .main-section .section-presentation .video-presentation {
     width: 90%;
     height: 80%;
@@ -454,6 +494,26 @@ label {
   button {
     width: 30%;
     height: 30%;
+  }
+  .left-menu .text-menu .options-menu {
+    font-size: 50px;
+  }
+  .left-menu .text-menu .btn-close-menu {
+    width: 25%;
+    height: 25%;
+  }
+  .close-menu .left-menu .icons .interior {
+    width: 90%;
+    height: 70%;
+  }
+  .close-menu .icons .interior a,
+  button {
+    width: 40%;
+    height: 40%;
+  }
+  .open-menu .icons .interior {
+    width: 90%;
+    height: 45%;
   }
   .main-section .section-compras .show-productos .cabezera {
     padding: 5px;
